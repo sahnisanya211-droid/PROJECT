@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function abc(){
+                    console.log(`My name is=${this.Name} and my phone is=${this.Phone}`)
+                 }
+           function createObject(x,y,z){
+                 var obj={}
+                 obj.Name=x
+                 obj.Phone=y
+                 obj.Address=z
+                 obj.About=abc
+                 return obj
+           }
+
+          var obj1= createObject("Viren","9034535435","Rohtak")
+          var obj2= createObject("Mannat","9215558497","Delhi")
+          var obj3= createObject("Avinash","9812366778","Hisar")
+
+          console.log(obj1,obj2,obj3)
+
+    </script>
+</body>
+
+</html>
